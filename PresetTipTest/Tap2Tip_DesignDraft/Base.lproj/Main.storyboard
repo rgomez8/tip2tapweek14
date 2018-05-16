@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aSu-cF-2P6">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Aldo PC.ttf">
+            <string>Aldo-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ja2-w3-Cz6">
+            <objects>
+                <navigationController id="aSu-cF-2P6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="09X-Uf-3Ho">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="19"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ndx-Tu-HxA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4L5-fX-zL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639" y="116"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tap2Tip_DesignDraft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzm-WF-VA6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="159"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QP-nu-Flb">
+                                        <rect key="frame" x="228" y="103" width="96" height="38"/>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILL TOTAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kE-fg-wcz">
+                                        <rect key="frame" x="51" y="103" width="136" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="136" id="cBd-1l-1wM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3QP-nu-Flb" secondAttribute="trailing" constant="51" id="M6E-Gd-gxz"/>
+                                    <constraint firstItem="9kE-fg-wcz" firstAttribute="bottom" secondItem="3QP-nu-Flb" secondAttribute="bottom" id="NB0-d9-t2L"/>
+                                    <constraint firstItem="3QP-nu-Flb" firstAttribute="leading" secondItem="9kE-fg-wcz" secondAttribute="trailing" constant="41" id="UtT-rl-yh5"/>
+                                    <constraint firstItem="9kE-fg-wcz" firstAttribute="top" secondItem="fzm-WF-VA6" secondAttribute="top" constant="103" id="fV2-DB-Hmj"/>
+                                    <constraint firstItem="9kE-fg-wcz" firstAttribute="leading" secondItem="fzm-WF-VA6" secondAttribute="leading" constant="51" id="rhq-5e-dQk"/>
+                                    <constraint firstItem="9kE-fg-wcz" firstAttribute="top" secondItem="3QP-nu-Flb" secondAttribute="top" id="uJl-oG-7LP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjc-IF-SY4">
+                                <rect key="frame" x="0.0" y="167" width="375" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILL AMOUNT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oh-2x-rmG">
+                                        <rect key="frame" x="52" y="22" width="95" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="95" id="vJY-yO-tvY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="20"/>
+                                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" placeholder="$0.00" textAlignment="right" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="cCJ-MH-M5n">
+                                        <rect key="frame" x="196" y="22" width="129" height="30"/>
+                                        <color key="textColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="light"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="2Oh-2x-rmG" firstAttribute="leading" secondItem="mjc-IF-SY4" secondAttribute="leading" constant="52" id="JVT-BP-1p0"/>
+                                    <constraint firstItem="2Oh-2x-rmG" firstAttribute="top" secondItem="cCJ-MH-M5n" secondAttribute="top" id="Vaj-QB-t3l"/>
+                                    <constraint firstItem="2Oh-2x-rmG" firstAttribute="centerY" secondItem="mjc-IF-SY4" secondAttribute="centerY" id="dvV-qU-LNL"/>
+                                    <constraint firstAttribute="trailing" secondItem="cCJ-MH-M5n" secondAttribute="trailing" constant="50" id="kKm-hK-m5A"/>
+                                    <constraint firstItem="2Oh-2x-rmG" firstAttribute="centerY" secondItem="cCJ-MH-M5n" secondAttribute="centerY" id="p3U-lc-GF7"/>
+                                    <constraint firstItem="cCJ-MH-M5n" firstAttribute="leading" secondItem="2Oh-2x-rmG" secondAttribute="trailing" constant="49" id="pBb-ES-WNQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsu-uq-4PC">
+                                <rect key="frame" x="0.0" y="249" width="375" height="529"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tbt-uB-zIy">
+                                        <rect key="frame" x="50" y="149" width="273" height="29"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <segments>
+                                            <segment title="10%"/>
+                                            <segment title="15%"/>
+                                            <segment title="20%"/>
+                                            <segment title="25%"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIP AMOUNT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDA-Zl-kEX">
+                                        <rect key="frame" x="50" y="40" width="110" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="8ah-bv-Y5Y"/>
+                                            <constraint firstAttribute="height" constant="36" id="ufW-L4-M0y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="25"/>
+                                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p74-zl-Qcz">
+                                        <rect key="frame" x="229" y="40" width="96" height="36"/>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="25"/>
+                                        <color key="textColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiJ-pD-W6O">
+                                        <rect key="frame" x="52" y="478" width="273" height="9"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="9" id="zpF-Bn-bes"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="15"/>
+                                        <state key="normal" title="SUGGESTED TIP GUIDE">
+                                            <color key="titleColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="P4v-mV-6Es" kind="show" id="ZNY-G3-pzi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fce-df-xwM" customClass="RoundedCorner" customModule="Tap2Tip_DesignDraft" customModuleProvider="target">
+                                        <rect key="frame" x="52" y="205" width="275" height="45"/>
+                                        <color key="backgroundColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="TDZ-NX-L4b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="20"/>
+                                        <state key="normal" title="CALCULATE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VIu-n9-PW2"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dQ-2p-JV7">
+                                        <rect key="frame" x="133" y="261" width="110" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="3D1-91-MJ2"/>
+                                            <constraint firstAttribute="height" constant="22" id="DpY-gW-FId"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="15"/>
+                                        <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmH-gZ-THh" customClass="RoundedCorner" customModule="Tap2Tip_DesignDraft" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="291" width="275" height="45"/>
+                                        <color key="backgroundColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Eiu-Wo-LHB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="20"/>
+                                        <state key="normal" title="CUSTOM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="PRG-U2-uiM" kind="show" id="x5I-bL-tcb"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIP PERCENTAGE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmG-Sd-xdT">
+                                        <rect key="frame" x="50" y="105" width="69" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="69" id="bKQ-8T-8Va"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="12"/>
+                                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fce-df-xwM" secondAttribute="trailing" constant="48" id="07g-jU-2bf"/>
+                                    <constraint firstItem="RDA-Zl-kEX" firstAttribute="leading" secondItem="HmG-Sd-xdT" secondAttribute="leading" id="0qn-9h-qw2"/>
+                                    <constraint firstItem="tbt-uB-zIy" firstAttribute="top" secondItem="HmG-Sd-xdT" secondAttribute="bottom" constant="8" id="1MY-z7-VoE"/>
+                                    <constraint firstAttribute="bottom" secondItem="uiJ-pD-W6O" secondAttribute="bottom" constant="42" id="CnT-2Y-efS"/>
+                                    <constraint firstItem="RDA-Zl-kEX" firstAttribute="top" secondItem="p74-zl-Qcz" secondAttribute="top" id="DD1-Jl-QTj"/>
+                                    <constraint firstItem="9dQ-2p-JV7" firstAttribute="top" secondItem="fce-df-xwM" secondAttribute="bottom" constant="11" id="EaD-xg-edb"/>
+                                    <constraint firstItem="fce-df-xwM" firstAttribute="leading" secondItem="uiJ-pD-W6O" secondAttribute="leading" id="IEH-9p-qtB"/>
+                                    <constraint firstItem="fce-df-xwM" firstAttribute="top" secondItem="tbt-uB-zIy" secondAttribute="bottom" constant="28" id="Ic7-ug-GnG"/>
+                                    <constraint firstItem="p74-zl-Qcz" firstAttribute="leading" secondItem="RDA-Zl-kEX" secondAttribute="trailing" constant="69" id="OZe-7c-v4a"/>
+                                    <constraint firstItem="zmH-gZ-THh" firstAttribute="leading" secondItem="tbt-uB-zIy" secondAttribute="leading" id="Q4j-yM-yUX"/>
+                                    <constraint firstItem="RDA-Zl-kEX" firstAttribute="baseline" secondItem="p74-zl-Qcz" secondAttribute="baseline" id="RrX-Yu-bCw"/>
+                                    <constraint firstItem="zmH-gZ-THh" firstAttribute="trailing" secondItem="uiJ-pD-W6O" secondAttribute="trailing" id="TlI-E6-z9U"/>
+                                    <constraint firstItem="tbt-uB-zIy" firstAttribute="leading" secondItem="HmG-Sd-xdT" secondAttribute="leading" id="WKr-aS-Cca"/>
+                                    <constraint firstItem="HmG-Sd-xdT" firstAttribute="top" secondItem="RDA-Zl-kEX" secondAttribute="bottom" constant="29" id="XYb-2H-iVe"/>
+                                    <constraint firstAttribute="trailing" secondItem="tbt-uB-zIy" secondAttribute="trailing" constant="52" id="Yut-u5-6xu"/>
+                                    <constraint firstItem="fce-df-xwM" firstAttribute="leading" secondItem="jsu-uq-4PC" secondAttribute="leading" constant="52" id="bYx-7G-5hy"/>
+                                    <constraint firstItem="zmH-gZ-THh" firstAttribute="trailing" secondItem="p74-zl-Qcz" secondAttribute="trailing" id="gaF-c1-86Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="p74-zl-Qcz" secondAttribute="trailing" constant="50" id="jU7-fW-j5w"/>
+                                    <constraint firstItem="RDA-Zl-kEX" firstAttribute="top" secondItem="jsu-uq-4PC" secondAttribute="top" constant="40" id="nHV-Nc-3sA"/>
+                                    <constraint firstItem="zmH-gZ-THh" firstAttribute="top" secondItem="9dQ-2p-JV7" secondAttribute="bottom" constant="8" symbolic="YES" id="ned-cZ-b76"/>
+                                    <constraint firstItem="tbt-uB-zIy" firstAttribute="top" secondItem="jsu-uq-4PC" secondAttribute="top" constant="149" id="pRt-VA-iGB"/>
+                                    <constraint firstItem="zmH-gZ-THh" firstAttribute="centerX" secondItem="9dQ-2p-JV7" secondAttribute="centerX" id="qJ2-Oy-uFc"/>
+                                    <constraint firstItem="RDA-Zl-kEX" firstAttribute="leading" secondItem="jsu-uq-4PC" secondAttribute="leading" constant="50" id="uHH-ud-zOi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fzm-WF-VA6" firstAttribute="trailing" secondItem="jsu-uq-4PC" secondAttribute="trailing" id="0T1-x8-HJS"/>
+                            <constraint firstItem="fzm-WF-VA6" firstAttribute="leading" secondItem="jsu-uq-4PC" secondAttribute="leading" id="3yA-aO-gxP"/>
+                            <constraint firstItem="jsu-uq-4PC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="249" id="DGN-zO-64p"/>
+                            <constraint firstAttribute="trailing" secondItem="jsu-uq-4PC" secondAttribute="trailing" id="PNY-o7-Eaf"/>
+                            <constraint firstItem="fzm-WF-VA6" firstAttribute="trailing" secondItem="mjc-IF-SY4" secondAttribute="trailing" id="Pe8-vi-Yap"/>
+                            <constraint firstItem="fzm-WF-VA6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Urs-CY-Y6b"/>
+                            <constraint firstItem="fzm-WF-VA6" firstAttribute="leading" secondItem="mjc-IF-SY4" secondAttribute="leading" id="eDe-17-7Vu"/>
+                            <constraint firstItem="mjc-IF-SY4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="167" id="eLs-zY-jhf"/>
+                            <constraint firstItem="jsu-uq-4PC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iX0-wP-uqE"/>
+                            <constraint firstItem="jsu-uq-4PC" firstAttribute="top" secondItem="mjc-IF-SY4" secondAttribute="bottom" constant="8" symbolic="YES" id="sal-2Z-dEN"/>
+                            <constraint firstItem="mjc-IF-SY4" firstAttribute="top" secondItem="fzm-WF-VA6" secondAttribute="bottom" constant="8" symbolic="YES" id="uZE-i6-fOL"/>
+                            <constraint firstItem="jsu-uq-4PC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uk9-Fu-TOx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jkf-Zd-pCr"/>
+                    <connections>
+                        <outlet property="billAmountTextField" destination="cCJ-MH-M5n" id="318-2r-hIo"/>
+                        <outlet property="billTotalLabel" destination="3QP-nu-Flb" id="Yb9-lN-u5S"/>
+                        <outlet property="tipAmountLabel" destination="p74-zl-Qcz" id="P9y-bM-dkA"/>
+                        <outlet property="tipSelector" destination="tbt-uB-zIy" id="WgC-eo-uwc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="115.27093596059113"/>
+        </scene>
+        <!--Custom Tip Table View Controller-->
+        <scene sceneID="D09-WM-X4M">
+            <objects>
+                <tableViewController id="P4v-mV-6Es" customClass="CustomTipTableViewController" customModule="Tap2Tip_DesignDraft" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cu8-fb-lKo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTipTableViewCell" rowHeight="65" id="iAT-lB-YbQ" customClass="CustomTipTableViewCell" customModule="Tap2Tip_DesignDraft" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iAT-lB-YbQ" id="AIK-MD-k9i">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64.666666666666671"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mx-kF-s6b">
+                                            <rect key="frame" x="30.000000000000007" y="19" width="112.66666666666669" height="26"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="TYPE OF SERVICE">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="20" name="Aldo-SemiBold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIP PERCENTAGE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPk-8u-4KO">
+                                            <rect key="frame" x="236" y="19" width="109" height="27"/>
+                                            <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="20"/>
+                                            <color key="textColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="9mx-kF-s6b" secondAttribute="bottom" constant="19.5" id="FXp-qz-Dcd"/>
+                                        <constraint firstAttribute="trailing" secondItem="bPk-8u-4KO" secondAttribute="trailing" constant="30" id="Fp8-ct-4Vd"/>
+                                        <constraint firstItem="9mx-kF-s6b" firstAttribute="leading" secondItem="AIK-MD-k9i" secondAttribute="leading" constant="30" id="Oyl-eb-SoN"/>
+                                        <constraint firstItem="bPk-8u-4KO" firstAttribute="top" secondItem="AIK-MD-k9i" secondAttribute="top" constant="19" id="V3f-iW-bZI"/>
+                                        <constraint firstAttribute="bottom" secondItem="bPk-8u-4KO" secondAttribute="bottom" constant="18.5" id="X3x-iQ-PaS"/>
+                                        <constraint firstItem="bPk-8u-4KO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AIK-MD-k9i" secondAttribute="leading" id="Y8d-hI-xcK"/>
+                                        <constraint firstItem="9mx-kF-s6b" firstAttribute="top" secondItem="AIK-MD-k9i" secondAttribute="top" constant="19" id="ZvQ-vZ-ilK"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9mx-kF-s6b" secondAttribute="trailing" id="fO5-hF-EUm"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="serviceTypeLabel" destination="9mx-kF-s6b" id="ACP-qG-GsG"/>
+                                    <outlet property="tipPercentageLabel" destination="bPk-8u-4KO" id="Qak-9s-8j3"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="P4v-mV-6Es" id="gCP-da-gH7"/>
+                            <outlet property="delegate" destination="P4v-mV-6Es" id="CTq-G1-IhY"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ls-lz-lfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="116"/>
+        </scene>
+        <!--Custom Tip View Controller-->
+        <scene sceneID="eYB-VX-gTa">
+            <objects>
+                <viewController id="PRG-U2-uiM" customClass="CustomTipViewController" customModule="Tap2Tip_DesignDraft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pg2-JL-ZBb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wDA-94-f1p">
+                                <rect key="frame" x="0.0" y="88" width="375" height="135"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIf-pr-42n">
+                                        <rect key="frame" x="229" y="66" width="96" height="38"/>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILL TOTAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E3-10-JaO">
+                                        <rect key="frame" x="52" y="66" width="135" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="135" id="Xp3-bP-VtX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gIf-pr-42n" secondAttribute="trailing" constant="50" id="2aw-gG-MtK"/>
+                                    <constraint firstItem="6E3-10-JaO" firstAttribute="bottom" secondItem="gIf-pr-42n" secondAttribute="bottom" id="7Vv-1B-XrF"/>
+                                    <constraint firstItem="gIf-pr-42n" firstAttribute="leading" secondItem="6E3-10-JaO" secondAttribute="trailing" constant="42" id="LCD-dz-s8f"/>
+                                    <constraint firstItem="6E3-10-JaO" firstAttribute="top" secondItem="gIf-pr-42n" secondAttribute="top" id="ade-yv-9F8"/>
+                                    <constraint firstItem="6E3-10-JaO" firstAttribute="top" secondItem="wDA-94-f1p" secondAttribute="top" constant="66" id="n0V-jw-1em"/>
+                                    <constraint firstItem="6E3-10-JaO" firstAttribute="leading" secondItem="wDA-94-f1p" secondAttribute="leading" constant="52" id="vq8-kH-E7S"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfo-kq-3PZ">
+                                <rect key="frame" x="0.0" y="231" width="375" height="219"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILL AMOUNT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsD-zN-qIb">
+                                        <rect key="frame" x="52" y="95" width="114" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="114" id="AVa-x9-gxq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="24"/>
+                                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" text="0.00" borderStyle="roundedRect" placeholder="$0.00" textAlignment="right" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="bsw-Rd-P0L">
+                                        <rect key="frame" x="196" y="94.666666666666686" width="129" height="30"/>
+                                        <color key="textColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="light"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="GsD-zN-qIb" firstAttribute="centerY" secondItem="bsw-Rd-P0L" secondAttribute="centerY" id="ERo-4h-9Rn"/>
+                                    <constraint firstItem="GsD-zN-qIb" firstAttribute="leading" secondItem="Zfo-kq-3PZ" secondAttribute="leading" constant="52" id="KGE-DE-Jbc"/>
+                                    <constraint firstItem="GsD-zN-qIb" firstAttribute="centerY" secondItem="Zfo-kq-3PZ" secondAttribute="centerY" id="QBo-Pt-UbG"/>
+                                    <constraint firstItem="bsw-Rd-P0L" firstAttribute="leading" secondItem="GsD-zN-qIb" secondAttribute="trailing" constant="30" id="dzf-8t-Adi"/>
+                                    <constraint firstItem="GsD-zN-qIb" firstAttribute="top" secondItem="bsw-Rd-P0L" secondAttribute="top" id="hkm-gn-ooa"/>
+                                    <constraint firstAttribute="trailing" secondItem="bsw-Rd-P0L" secondAttribute="trailing" constant="50" id="wmE-pA-Qi3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7t-Tr-ns0">
+                                <rect key="frame" x="0.0" y="458" width="375" height="320"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIP AMOUNT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-80-cxf">
+                                        <rect key="frame" x="50" y="40" width="137" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="137" id="pTf-dB-eoC"/>
+                                            <constraint firstAttribute="height" constant="36" id="zJ2-UD-LUw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="24"/>
+                                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BM8-vp-OXR">
+                                        <rect key="frame" x="229" y="40" width="96" height="36"/>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="25"/>
+                                        <color key="textColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIP PERCENTAGE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ad-Om-8HA">
+                                        <rect key="frame" x="50" y="95" width="171" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="6XR-RT-mGL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="24"/>
+                                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEF-9v-VHX">
+                                        <rect key="frame" x="229" y="95" width="96" height="36"/>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="25"/>
+                                        <color key="textColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6S-dF-3Wm">
+                                        <rect key="frame" x="49" y="287" width="273" height="29"/>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="15"/>
+                                        <state key="normal" title="SUGGESTED TIP GUIDE">
+                                            <color key="titleColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="P4v-mV-6Es" kind="show" id="M9S-7Z-ASg"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="VPu-5q-cq5">
+                                        <rect key="frame" x="48" y="163" width="279" height="31"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="minimumTrackTintColor" red="0.1101569608" green="0.67506223919999997" blue="0.44036352629999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="thumbTintColor" red="0.10980392160000001" green="0.67450980390000004" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="sliderValueDidChange:" destination="PRG-U2-uiM" eventType="valueChanged" id="To4-sm-dBj"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz1-wT-w1V">
+                                        <rect key="frame" x="294" y="208" width="31" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="31" id="XPU-g5-QtX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="18"/>
+                                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8n-z9-0HN">
+                                        <rect key="frame" x="177" y="212" width="28" height="17"/>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="15"/>
+                                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUU-lg-Jpy">
+                                        <rect key="frame" x="50" y="207" width="28" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="28" id="CwI-rQ-Ouu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Aldo-SemiBold" family="Aldo" pointSize="18"/>
+                                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="Dug-80-cxf" firstAttribute="leading" secondItem="y7t-Tr-ns0" secondAttribute="leading" constant="50" id="0f2-BG-Rfp"/>
+                                    <constraint firstItem="VPu-5q-cq5" firstAttribute="trailing" secondItem="hz1-wT-w1V" secondAttribute="trailing" id="2QB-Qr-Yo9"/>
+                                    <constraint firstItem="YUU-lg-Jpy" firstAttribute="baseline" secondItem="hz1-wT-w1V" secondAttribute="baseline" constant="-1" id="3E3-NG-6ir"/>
+                                    <constraint firstItem="TEF-9v-VHX" firstAttribute="leading" secondItem="1ad-Om-8HA" secondAttribute="trailing" constant="8" id="4ZQ-Dy-NVH"/>
+                                    <constraint firstItem="m8n-z9-0HN" firstAttribute="leading" secondItem="YUU-lg-Jpy" secondAttribute="trailing" constant="99" id="4wI-hx-Kjn"/>
+                                    <constraint firstItem="VPu-5q-cq5" firstAttribute="leading" secondItem="YUU-lg-Jpy" secondAttribute="leading" id="Joe-e9-ll3"/>
+                                    <constraint firstItem="Dug-80-cxf" firstAttribute="baseline" secondItem="BM8-vp-OXR" secondAttribute="baseline" id="McT-HF-QD7"/>
+                                    <constraint firstItem="TEF-9v-VHX" firstAttribute="top" secondItem="BM8-vp-OXR" secondAttribute="bottom" constant="19" id="OBy-qB-oXQ"/>
+                                    <constraint firstItem="Dug-80-cxf" firstAttribute="leading" secondItem="1ad-Om-8HA" secondAttribute="leading" id="Pez-NI-AwO"/>
+                                    <constraint firstItem="m8n-z9-0HN" firstAttribute="top" secondItem="VPu-5q-cq5" secondAttribute="bottom" constant="19" id="Q02-ZX-9Yn"/>
+                                    <constraint firstItem="VPu-5q-cq5" firstAttribute="top" secondItem="TEF-9v-VHX" secondAttribute="bottom" constant="32" id="SgI-ao-Ymt"/>
+                                    <constraint firstItem="BM8-vp-OXR" firstAttribute="leading" secondItem="TEF-9v-VHX" secondAttribute="leading" id="TkV-HE-9HP"/>
+                                    <constraint firstItem="1ad-Om-8HA" firstAttribute="top" secondItem="TEF-9v-VHX" secondAttribute="top" id="X1F-kb-3Cg"/>
+                                    <constraint firstAttribute="trailing" secondItem="C6S-dF-3Wm" secondAttribute="trailing" constant="53" id="Y3c-jf-MyA"/>
+                                    <constraint firstItem="Dug-80-cxf" firstAttribute="top" secondItem="BM8-vp-OXR" secondAttribute="top" id="YMs-Ea-Bnd"/>
+                                    <constraint firstAttribute="trailing" secondItem="BM8-vp-OXR" secondAttribute="trailing" constant="50" id="Zud-f0-N7u"/>
+                                    <constraint firstItem="1ad-Om-8HA" firstAttribute="baseline" secondItem="TEF-9v-VHX" secondAttribute="baseline" id="baM-DA-2kH"/>
+                                    <constraint firstItem="BM8-vp-OXR" firstAttribute="leading" secondItem="Dug-80-cxf" secondAttribute="trailing" constant="42" id="fsd-dD-bIV"/>
+                                    <constraint firstItem="hz1-wT-w1V" firstAttribute="leading" secondItem="m8n-z9-0HN" secondAttribute="trailing" constant="89" id="hn9-xc-jTa"/>
+                                    <constraint firstItem="TEF-9v-VHX" firstAttribute="trailing" secondItem="VPu-5q-cq5" secondAttribute="trailing" id="jaP-z8-8he"/>
+                                    <constraint firstItem="1ad-Om-8HA" firstAttribute="leading" secondItem="VPu-5q-cq5" secondAttribute="leading" id="p61-v1-Jrb"/>
+                                    <constraint firstItem="BM8-vp-OXR" firstAttribute="trailing" secondItem="TEF-9v-VHX" secondAttribute="trailing" id="plI-CN-gnl"/>
+                                    <constraint firstItem="C6S-dF-3Wm" firstAttribute="leading" secondItem="y7t-Tr-ns0" secondAttribute="leading" constant="49" id="qmD-ly-ocU"/>
+                                    <constraint firstItem="Dug-80-cxf" firstAttribute="top" secondItem="y7t-Tr-ns0" secondAttribute="top" constant="40" id="t62-AN-1Ic"/>
+                                    <constraint firstItem="YUU-lg-Jpy" firstAttribute="top" secondItem="VPu-5q-cq5" secondAttribute="bottom" constant="14" id="tHy-Jx-teg"/>
+                                    <constraint firstItem="C6S-dF-3Wm" firstAttribute="top" secondItem="m8n-z9-0HN" secondAttribute="bottom" constant="58" id="uRs-QH-dbL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y7t-Tr-ns0" firstAttribute="bottom" secondItem="EIo-4M-VLw" secondAttribute="bottom" id="2Yr-Qh-x77"/>
+                            <constraint firstItem="Zfo-kq-3PZ" firstAttribute="trailing" secondItem="wDA-94-f1p" secondAttribute="trailing" id="49k-Uz-cv9"/>
+                            <constraint firstItem="wDA-94-f1p" firstAttribute="top" secondItem="EIo-4M-VLw" secondAttribute="top" id="4wN-rb-05n"/>
+                            <constraint firstItem="Zfo-kq-3PZ" firstAttribute="leading" secondItem="wDA-94-f1p" secondAttribute="leading" id="C8y-yo-CrX"/>
+                            <constraint firstItem="Zfo-kq-3PZ" firstAttribute="trailing" secondItem="y7t-Tr-ns0" secondAttribute="trailing" id="Cd5-Ui-7Li"/>
+                            <constraint firstAttribute="bottom" secondItem="Zfo-kq-3PZ" secondAttribute="bottom" constant="362" id="Cgp-An-MGB"/>
+                            <constraint firstItem="Zfo-kq-3PZ" firstAttribute="leading" secondItem="y7t-Tr-ns0" secondAttribute="leading" id="J0a-VS-YIc"/>
+                            <constraint firstItem="y7t-Tr-ns0" firstAttribute="leading" secondItem="pg2-JL-ZBb" secondAttribute="leading" id="WYP-ku-YOB"/>
+                            <constraint firstItem="y7t-Tr-ns0" firstAttribute="top" secondItem="Zfo-kq-3PZ" secondAttribute="bottom" constant="8" symbolic="YES" id="eNq-8V-Rb5"/>
+                            <constraint firstItem="Zfo-kq-3PZ" firstAttribute="top" secondItem="wDA-94-f1p" secondAttribute="bottom" constant="8" symbolic="YES" id="m07-9F-XZo"/>
+                            <constraint firstAttribute="trailing" secondItem="y7t-Tr-ns0" secondAttribute="trailing" id="rY4-LW-wIJ"/>
+                            <constraint firstItem="Zfo-kq-3PZ" firstAttribute="top" secondItem="pg2-JL-ZBb" secondAttribute="top" constant="231" id="zBW-Pn-Bvi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EIo-4M-VLw"/>
+                    </view>
+                    <connections>
+                        <outlet property="billAmountTextField" destination="bsw-Rd-P0L" id="GMQ-n2-L9W"/>
+                        <outlet property="billTotalLabel" destination="gIf-pr-42n" id="0Jm-A0-fav"/>
+                        <outlet property="percentageSlider" destination="VPu-5q-cq5" id="Igo-Ih-uyN"/>
+                        <outlet property="tipAmountLabel" destination="BM8-vp-OXR" id="dz8-st-lCD"/>
+                        <outlet property="tipPercentageLabel" destination="TEF-9v-VHX" id="3wt-rZ-By2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gu9-gB-RNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1692" y="115.27093596059113"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZNY-G3-pzi"/>
+    </inferredMetricsTieBreakers>
+</document>

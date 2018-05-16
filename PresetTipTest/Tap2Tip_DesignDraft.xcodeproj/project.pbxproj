@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7532058209C12860093FB36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7532057209C12860093FB36 /* AppDelegate.swift */; };
+		D753205A209C12860093FB36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7532059209C12860093FB36 /* ViewController.swift */; };
+		D753205D209C12870093FB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D753205B209C12870093FB36 /* Main.storyboard */; };
+		D753205F209C12870093FB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D753205E209C12870093FB36 /* Assets.xcassets */; };
+		D7532062209C12870093FB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7532060209C12870093FB36 /* LaunchScreen.storyboard */; };
+		D753206A20A241380093FB36 /* CustomTipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D753206920A241380093FB36 /* CustomTipTableViewCell.swift */; };
+		D753206C20A2415E0093FB36 /* CustomTipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D753206B20A2415E0093FB36 /* CustomTipTableViewController.swift */; };
+		D753206E20A242930093FB36 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D753206D20A242930093FB36 /* RoundedCorner.swift */; };
+		D7C8E96020A275A2009D6252 /* Aldo PC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C8E95F20A275A2009D6252 /* Aldo PC.ttf */; };
+		D7C8E96220A28EB7009D6252 /* CustomTipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C8E96120A28EB7009D6252 /* CustomTipViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D709DE3320AA95D7007D3C5F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		D7532054209C12860093FB36 /* Tap2Tip_DesignDraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tap2Tip_DesignDraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7532057209C12860093FB36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7532059209C12860093FB36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D753205C209C12870093FB36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D753205E209C12870093FB36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7532061209C12870093FB36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7532063209C12870093FB36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D753206920A241380093FB36 /* CustomTipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTipTableViewCell.swift; sourceTree = "<group>"; };
+		D753206B20A2415E0093FB36 /* CustomTipTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTipTableViewController.swift; sourceTree = "<group>"; };
+		D753206D20A242930093FB36 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		D7C8E95F20A275A2009D6252 /* Aldo PC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aldo PC.ttf"; path = "Fonts/Aldo PC.ttf"; sourceTree = SOURCE_ROOT; };
+		D7C8E96120A28EB7009D6252 /* CustomTipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTipViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7532051209C12860093FB36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D709DE3220AA95D0007D3C5F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D709DE3320AA95D7007D3C5F /* logo.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		D753204B209C12860093FB36 = {
+			isa = PBXGroup;
+			children = (
+				D7532056209C12860093FB36 /* Tap2Tip_DesignDraft */,
+				D7532055209C12860093FB36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7532055209C12860093FB36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7532054209C12860093FB36 /* Tap2Tip_DesignDraft.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7532056209C12860093FB36 /* Tap2Tip_DesignDraft */ = {
+			isa = PBXGroup;
+			children = (
+				D709DE3220AA95D0007D3C5F /* Image */,
+				D7C8E95F20A275A2009D6252 /* Aldo PC.ttf */,
+				D7532057209C12860093FB36 /* AppDelegate.swift */,
+				D7532059209C12860093FB36 /* ViewController.swift */,
+				D753205B209C12870093FB36 /* Main.storyboard */,
+				D753205E209C12870093FB36 /* Assets.xcassets */,
+				D7532060209C12870093FB36 /* LaunchScreen.storyboard */,
+				D753206D20A242930093FB36 /* RoundedCorner.swift */,
+				D7C8E96120A28EB7009D6252 /* CustomTipViewController.swift */,
+				D753206920A241380093FB36 /* CustomTipTableViewCell.swift */,
+				D753206B20A2415E0093FB36 /* CustomTipTableViewController.swift */,
+				D7532063209C12870093FB36 /* Info.plist */,
+			);
+			path = Tap2Tip_DesignDraft;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7532053209C12860093FB36 /* Tap2Tip_DesignDraft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7532066209C12870093FB36 /* Build configuration list for PBXNativeTarget "Tap2Tip_DesignDraft" */;
+			buildPhases = (
+				D7532050209C12860093FB36 /* Sources */,
+				D7532051209C12860093FB36 /* Frameworks */,
+				D7532052209C12860093FB36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tap2Tip_DesignDraft;
+			productName = Tap2Tip_DesignDraft;
+			productReference = D7532054209C12860093FB36 /* Tap2Tip_DesignDraft.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D753204C209C12860093FB36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Sunny Eun";
+				TargetAttributes = {
+					D7532053209C12860093FB36 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D753204F209C12860093FB36 /* Build configuration list for PBXProject "Tap2Tip_DesignDraft" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D753204B209C12860093FB36;
+			productRefGroup = D7532055209C12860093FB36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7532053209C12860093FB36 /* Tap2Tip_DesignDraft */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7532052209C12860093FB36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7532062209C12870093FB36 /* LaunchScreen.storyboard in Resources */,
+				D753205F209C12870093FB36 /* Assets.xcassets in Resources */,
+				D7C8E96020A275A2009D6252 /* Aldo PC.ttf in Resources */,
+				D753205D209C12870093FB36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7532050209C12860093FB36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D753206C20A2415E0093FB36 /* CustomTipTableViewController.swift in Sources */,
+				D7C8E96220A28EB7009D6252 /* CustomTipViewController.swift in Sources */,
+				D753205A209C12860093FB36 /* ViewController.swift in Sources */,
+				D7532058209C12860093FB36 /* AppDelegate.swift in Sources */,
+				D753206A20A241380093FB36 /* CustomTipTableViewCell.swift in Sources */,
+				D753206E20A242930093FB36 /* RoundedCorner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D753205B209C12870093FB36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D753205C209C12870093FB36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7532060209C12870093FB36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7532061209C12870093FB36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7532064209C12870093FB36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7532065209C12870093FB36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7532067209C12870093FB36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4YCLN96Z8;
+				INFOPLIST_FILE = Tap2Tip_DesignDraft/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sunnyeun.Tap2Tip-DesignDraft";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7532068209C12870093FB36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D4YCLN96Z8;
+				INFOPLIST_FILE = Tap2Tip_DesignDraft/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sunnyeun.Tap2Tip-DesignDraft";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D753204F209C12860093FB36 /* Build configuration list for PBXProject "Tap2Tip_DesignDraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7532064209C12870093FB36 /* Debug */,
+				D7532065209C12870093FB36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7532066209C12870093FB36 /* Build configuration list for PBXNativeTarget "Tap2Tip_DesignDraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7532067209C12870093FB36 /* Debug */,
+				D7532068209C12870093FB36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D753204C209C12860093FB36 /* Project object */;
+}
